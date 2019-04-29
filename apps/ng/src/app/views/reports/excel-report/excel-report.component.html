@@ -1,0 +1,53 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="card">
+        <div class="card-header">
+          <strong>Dane zródłowe CSV</strong>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <textarea id="csv-input" name="csv-input" rows="30" class="form-control" [(ngModel)]="csvData"
+                        placeholder=""></textarea>
+            </div>
+          </div><!--/.row-->
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <strong>Analiza danych</strong>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <button (click)="parseData()">Parsuj</button>
+                </div>
+              </div><!--/.row-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <strong>Wyniki</strong>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12">
+                    <textarea id="csv-output" name="csv-output" rows="10" class="form-control" placeholder=""></textarea>
+                </div>
+              </div><!--/.row-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+</div>
